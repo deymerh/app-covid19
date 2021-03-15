@@ -1,4 +1,4 @@
-<article>
+<article *ngFor="let infoCountrie of infoCountries">
   <div class="icon__title">
     <p>Covid-19</p>
     <span class="material-icons">
@@ -12,7 +12,7 @@
       </span>
       <div class="">
         <h4>Country</h4>
-        <p>Colombia</p>
+        <p>{{ infoCountrie.Country}}</p>
       </div>
     </div>
     <div class="item__filed">
@@ -20,8 +20,8 @@
         outlined_flag
       </span>
       <div class="">
-        <h4>Country</h4>
-        <p>Colombia</p>
+        <h4>Date</h4>
+        <p>{{infoCountrie.Date | date: "longDate"}}</p>
       </div>
     </div>
     <div class="item__filed">
@@ -29,8 +29,8 @@
         outlined_flag
       </span>
       <div class="">
-        <h4>Country</h4>
-        <p>Colombia</p>
+        <h4>New Confirmed</h4>
+        <p> {{infoCountrie.NewConfirmed}} </p>
       </div>
     </div>
     <div class="item__filed">
@@ -38,8 +38,8 @@
         outlined_flag
       </span>
       <div class="">
-        <h4>Country</h4>
-        <p>Colombia</p>
+        <h4>New Recovered</h4>
+        <p> {{infoCountrie.NewRecovered}} </p>
       </div>
     </div>
     <div class="item__filed">
@@ -47,8 +47,8 @@
         outlined_flag
       </span>
       <div class="">
-        <h4>Country</h4>
-        <p>Colombia</p>
+        <h4>Total Confirmed</h4>
+        <p> {{infoCountrie.TotalConfirmed}} </p>
       </div>
     </div>
     <div class="item__filed">
@@ -56,8 +56,8 @@
         outlined_flag
       </span>
       <div class="">
-        <h4>Country</h4>
-        <p>Colombia</p>
+        <h4>New Deaths</h4>
+        <p> {{infoCountrie.NewDeaths}} </p>
       </div>
     </div>
     <div class="item__filed">
@@ -65,8 +65,8 @@
         outlined_flag
       </span>
       <div class="">
-        <h4>Country</h4>
-        <p>Colombia</p>
+        <h4>Total Deaths</h4>
+        <p> {{infoCountrie.TotalDeaths}} </p>
       </div>
     </div>
     <div class="item__filed">
@@ -74,8 +74,8 @@
         outlined_flag
       </span>
       <div class="">
-        <h4>Country</h4>
-        <p>Colombia</p>
+        <h4>Total Recovered</h4>
+        <p> {{infoCountrie.TotalRecovered}} </p>
       </div>
     </div>
   </section>

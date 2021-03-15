@@ -3,8 +3,10 @@ header{
   background-color: rgb(64, 81, 181);
   display: flex;
   justify-content: space-around;
-  height: 80px;
+  height: 10vh;
   padding: 0px 20px;
+  border-bottom: 1px solid darken($color: rgb(5, 18, 96), $amount: 20);
+  box-shadow: 0px 0px 3px lighten($color: rgb(5, 18, 96), $amount: 20);
   h1{
     margin: 0px;
     a{

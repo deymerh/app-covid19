@@ -1,0 +1,27 @@
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(64, 81, 181);
+  height: 90vh;
+  width: 30vw;
+  max-width: fit-content;
+  border-right: 0.5px solid lighten($color: rgb(5, 18, 96), $amount: 40);
+  padding-top: 20px;
+  a{
+    align-items: center;
+    display: flex;
+    color: rgb(5, 18, 96);
+    text-decoration: none;
+    padding: 12px;
+    span{
+      font-size: 32px;
+    }
+    p{
+      margin: 0px 5px;
+      font-size: 22px;
+    }
+  }
+  a:hover{
+      background-color: rgb(88, 108, 219);
+  }
+}

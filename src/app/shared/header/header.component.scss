@@ -1,0 +1,30 @@
+header{
+  align-items: center;
+  background-color: rgb(64, 81, 181);
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  padding: 0px 20px;
+  h1{
+    margin: 0px;
+    a{
+      cursor: pointer;
+      text-decoration: none;
+      color:white;
+    }
+  }
+  div{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    p{
+      margin: 0px 15px;
+      font-size: 24px;
+      color: white;
+    }
+    span{
+      font-size: 30px;
+      color: rgb(5, 18, 96);
+    }
+  }
+}

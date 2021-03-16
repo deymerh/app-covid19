@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   title = 'app-test';
-
-  constructor( ) { }
+  spinner: boolean;
+  constructor() { }
 
   ngOnInit(): void {
   }

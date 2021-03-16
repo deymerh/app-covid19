@@ -8,13 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { CardItemComponent } from './components/card-item/card-item.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidebarComponent,
-    CardItemComponent
+    CardItemComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

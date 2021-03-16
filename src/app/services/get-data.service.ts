@@ -5,9 +5,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GetDataService {
-
-  constructor(private http: HttpClient) { }
-  getInfo(url:string) {
+  public loading: boolean = false;
+  constructor(public http: HttpClient) { }
+  
+  getInfo(url: string) {
     return this.http.get(url);
   }
+
 }

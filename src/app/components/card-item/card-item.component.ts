@@ -10,17 +10,20 @@ export class CardItemComponent implements OnInit {
   public url: string = "https://api.covid19api.com/summary";
   public infoCovid: any = [];
   public infoCountries: any = [];
+  public loading: boolean = false;
   constructor(private GetDataService: GetDataService) { }
 
   ngOnInit(): void {
     this.getInfo();
   }
   getInfo() {
+    this.loading = true;
     this.GetDataService.getInfo(this.url).subscribe(res => {
       this.infoCovid = res;
       this.infoCountries = this.infoCovid.Countries;
       console.log(this.infoCovid)
       console.log(this.infoCountries)
     });
+    this.loading = false;
 }
 }
